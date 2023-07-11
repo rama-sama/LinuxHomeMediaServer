@@ -26,7 +26,7 @@ sudo apt install sonarr
 
 ```
 sudo mkdir /lib/systemd/system/sonarr.service.d
-cat << EOF | sudo tee /etc/systemd/system/sonarr.service.d/user.conf > /dev/null
+cat << EOF | sudo tee /lib/systemd/system/sonarr.service.d/user.conf > /dev/null
 # Override service user
 [Service]
 Group=media
