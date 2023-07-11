@@ -1,5 +1,11 @@
 # Sonarr Installation
 
+# Prerequisites
+```
+sudo addgroup media
+sudo adduser jackett media
+```
+
 Add Mono Repo (20.04)
 ```
 sudo apt install gnupg ca-certificates
