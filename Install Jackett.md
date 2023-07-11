@@ -29,11 +29,11 @@ Group=media
 EOF
 ```
 
-## Reload systemctl daemon
+## Reload systemd
 ```
 sudo systemctl -q daemon-reload
 ```
-# Restart Jackett
+## Enable the Jackett service
 ```
 sudo systemctl enable --now -q jackett
 ```
