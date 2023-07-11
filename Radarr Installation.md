@@ -10,6 +10,7 @@ sudo mkdir /var/lib/radarr
 sudo chown radarr:radarr /var/lib/radarr
 ```
 
+## Installation
 Download binaries for x64
 ```
 wget --content-disposition 'http://radarr.servarr.com/v1/update/master/updatefile?os=linux&runtime=netcore&arch=x64'
