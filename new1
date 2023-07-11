@@ -14,3 +14,10 @@ EOF
 
 sudo systemctl -q daemon-reload
 sudo systemctl enable --now -q jackett
+
+sudo systemctl daemon-reload
+sudo systemctl stop jackett.service
+sudo systemctl disable jackett.service
+sudo rm -rf /etc/systemd/system/jackett.service*
+sudo rm -rf /opt/Jackett
+sudo userdel jackett
