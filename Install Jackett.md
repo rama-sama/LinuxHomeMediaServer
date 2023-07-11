@@ -1,18 +1,18 @@
 # LinuxHomeMediaServer
 
-Prerequisites
+## Prerequisites
 ```
 sudo adduser --system --group jackett
 sudo addgroup media
 sudo adduser jackett media
 ```
 
-Download Jackett and install using Servarr script
+## Download Jackett and install using Servarr script
 ```
 cd /opt && f=Jackett.Binaries.LinuxAMDx64.tar.gz && release=$(wget -q https://github.com/Jackett/Jackett/releases/latest -O - | grep "title>Release" | cut -d " " -f 4) && sudo wget -Nc https://github.com/Jackett/Jackett/releases/download/$release/"$f" && sudo tar -xzf "$f" && sudo rm -f "$f" && cd Jackett* && sudo ./install_service_systemd.sh && systemctl status jackett.service && cd - && echo -e "\nVisit http://127.0.0.1:9117"
 ```
 
-Stop Jacket service to add service overrides
+## Stop Jacket service
 ```
 sudo systemctl stop jackett.service
 ```
@@ -29,10 +29,11 @@ Group=media
 EOF
 ```
 
-Restart Jackett service
+## Reload systemctl daemon
 ```
 sudo systemctl -q daemon-reload
 ```
+# Restart Jackett
 ```
 sudo systemctl enable --now -q jackett
 ```
