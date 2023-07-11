@@ -24,7 +24,7 @@ cat << EOF | sudo tee /etc/systemd/system/jackett.service.d/user.conf > /dev/nul
 # Override service user
 [Service]
 User=jackett
-Group=jackett
+Group=media
 EOF
 ```
 
@@ -38,7 +38,6 @@ sudo systemctl enable --now -q jackett
 
 # Uninstall
 ```
-sudo systemctl daemon-reload
 sudo systemctl stop jackett.service
 sudo systemctl disable jackett.service
 sudo rm -rf /etc/systemd/system/jackett.service*
