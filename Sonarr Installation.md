@@ -6,6 +6,7 @@ sudo addgroup media
 sudo adduser jackett media
 ```
 
+# Installation
 Add Mono Repo (20.04)
 ```
 sudo apt install gnupg ca-certificates
