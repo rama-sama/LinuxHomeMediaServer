@@ -36,7 +36,7 @@ sudo systemctl -q daemon-reload
 ```
 Enable the Jackett service
 ```
-sudo systemctl enable --now -q jackett
+sudo systemctl start jackett
 ```
 
 # Uninstall
