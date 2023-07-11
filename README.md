@@ -9,6 +9,7 @@
 
 ## Stop Jacket service to make changes to systemd service user and group
 `sudo systemctl stop jackett.service`
+
 `sudo mkdir /etc/systemd/system/jackett.service.d`
 ```
 cat << EOF | sudo tee /etc/systemd/system/jackett.service.d/user.conf > /dev/null
@@ -20,6 +21,7 @@ EOF
 ```
 
 `sudo systemctl -q daemon-reload`
+
 `sudo systemctl enable --now -q jackett`
 
 # Uninstall
