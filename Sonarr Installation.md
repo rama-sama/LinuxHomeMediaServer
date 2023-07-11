@@ -1,3 +1,5 @@
+# Sonarr Installation
+
 Add the mono repository
 ```
 sudo apt install dirmngr ca-certificates gnupg
