@@ -2,6 +2,7 @@
 
 ## Prerequisites
 ```
+sudo apt install curl sqlite3
 sudo adduser --system radarr
 sudo mkdir /var/lib/radarr
 sudo chown radarr:radarr /var/lib/radarr
