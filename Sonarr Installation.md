@@ -3,7 +3,7 @@
 ## Prerequisites
 ```
 sudo addgroup media
-sudo adduser jackett media
+sudo adduser sonarr media
 ```
 
 ## Installation
